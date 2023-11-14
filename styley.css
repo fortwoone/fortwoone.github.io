@@ -24,6 +24,10 @@ a:hover{
     justify-content:center;
     align-items:center;
 }
+td{
+    padding-left:10px;
+    padding-right:10px;
+}
 .vert-wrap{
     display:flex;
     flex-direction:column;
