@@ -27,6 +27,7 @@ a:hover{
 td{
     padding-left:10px;
     padding-right:10px;
+    text-align:center;
 }
 .vert-wrap{
     display:flex;
