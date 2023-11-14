@@ -19,7 +19,14 @@ a:hover{
     color: #09dc1b;
 }
 
-.bordered{
+.bordered, td, tr{
     border: 2px solid silver;
     justify-content:center;
+    align-items:center;
+}
+.vert-wrap{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items:center;
 }
