@@ -11,6 +11,14 @@ header{
     justify-content:center;
     align-items:center;
 }
+
+a{
+    color: #033f93;
+}
+a:hover{
+    color: #09dc1b;
+}
+
 .bordered{
     border: 2px solid silver;
     justify-content:center;
