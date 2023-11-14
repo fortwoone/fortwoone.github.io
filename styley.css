@@ -19,11 +19,18 @@ a:hover{
     color: #09dc1b;
 }
 
-.bordered, td, tr{
+.bordered{
     border: 2px solid silver;
     justify-content:center;
     align-items:center;
 }
+
+.bordered_gold, td, tr{
+    border:6px solid gold;
+    justify-content:center;
+    align-items:center;
+}
+
 td{
     padding-left:10px;
     padding-right:10px;
