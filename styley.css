@@ -12,6 +12,10 @@ header{
     align-items:center;
 }
 
+h2{
+    font-weight:900;
+}
+
 a{
     color: #033f93;
 }
@@ -24,6 +28,14 @@ a:hover{
     justify-content:center;
     align-items:center;
     text-align:center;
+}
+
+.no_list{
+    list-style-type:none;
+}
+
+b{
+    font-weight:900;
 }
 
 .bordered_gold, td, tr{
