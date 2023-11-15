@@ -23,6 +23,7 @@ a:hover{
     border: 2px solid silver;
     justify-content:center;
     align-items:center;
+    text-align:center;
 }
 
 .bordered_gold, td, tr{
