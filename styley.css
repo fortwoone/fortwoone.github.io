@@ -55,3 +55,7 @@ td{
     flex-wrap:wrap;
     align-items:center;
 }
+
+.bold_paragraph{
+    font-weight:bold;
+}
