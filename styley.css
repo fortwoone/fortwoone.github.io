@@ -56,6 +56,10 @@ td{
     align-items:center;
 }
 
+footer{
+    justify-content:center;
+}
+
 .bold_paragraph{
     font-weight:bold;
 }
