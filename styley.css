@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;900&display=swap');
+@import "assets/Triforce.ttf";
+
+@font-face{
+    font-family:"Triforce";
+    src:
+    url("assets/Triforce.ttf") format("truetype");
+}
+
 body{
     background-color: #147da4;
     color:white;
@@ -40,6 +48,8 @@ b{
 
 .bordered_gold, td, tr{
     border:6px solid gold;
+    border-collapse:collapse;
+    border-radius:20px;
     justify-content:center;
     align-items:center;
 }
@@ -63,4 +73,77 @@ footer{
 
 .bold_paragraph{
     font-weight:bold;
+}
+
+/* PYZORA DOCUMENTATION STYLE RULES */
+
+.pyzora_header_logo{
+    background: #C90000;
+    background: linear-gradient(to right, #C90000 0%, #2B31D6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:"Triforce", sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-size:72pt;
+}
+
+a>h1.pyzora_header_logo:hover{
+    border-bottom:none;
+    font-style:normal;
+    text-underline: none;
+}
+
+.pyzora_nav_link{
+    color:white;
+    margin:auto;
+    border:1px solid silver;
+}
+
+.unroll>a::after{
+    content:"▼";
+    font-size:12px;
+}
+
+.options{
+    display:none;
+    list-style-type:none;
+    justify-content:center;
+    position:sticky;
+    margin:auto;
+}
+
+nav>ul>li:hover .options{
+    display:block;
+}
+
+nav>ul::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.options>li{
+    float:left;
+}
+
+.pyzora_nav{
+    align-items:center;
+    justify-content:space-evenly;
+    position:sticky;
+    width:100%;
+}
+
+.pyzora_docs_nav_list{
+    list-style-type:none;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.pyzora_docs_nav_list>li{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: nowrap;
+    text-align: center;
 }
