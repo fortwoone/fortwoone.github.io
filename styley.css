@@ -36,7 +36,11 @@ img{
 }
 
 body{
-    background-color: #147da4;
+    /*background-color: #147da4;*/
+    background:#2222c0;
+    background:linear-gradient(to bottom, #2222c0 0%, #147da4 100%);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
     color:white;
     font-family: 'Junction', sans-serif;
 }
@@ -46,7 +50,7 @@ body{
 }
 
 header{
-    background-color: #2222c0;
+    /*background-color: #2222c0;*/
     display:flex;
     justify-content:center;
     align-items:center;
@@ -118,7 +122,7 @@ h2{
 }
 
 a{
-    color: #033f93;
+    color: #36c3ff;
 }
 a:hover{
     color: #09dc1b;
@@ -201,6 +205,10 @@ footer{
 .options>li>a{
     color:white;
     border-bottom:none;
+}
+
+.options>li>a:hover{
+    color: #09dc1b;
 }
 
 nav>ul>li:hover .options{
