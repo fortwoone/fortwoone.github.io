@@ -98,6 +98,11 @@ body{
     height:150px;
 }
 
+#bash_logo{
+    width:30%;
+    height:30%;
+}
+
 header{
     display:flex;
     justify-content:center;
@@ -129,8 +134,6 @@ nav>ul::after{
 
 nav>ul>li{
     display:flex;
-    /*border-right:0.25px solid black;*/
-    /*border-left:0.25px solid black;*/
     float:left;
     width:50%;
     position:relative;
