@@ -7,9 +7,24 @@
         <link rel="stylesheet" href="styley.css">
     </head>
     <body>
-        <header>
-            <a href="index.html"><img src="assets/logo.png" alt="fortwoone"></a>
-            <h1>Fortwoone's Website</h1>
+        <header class="vert-wrap">
+            <div class="logo_and_name">
+                <a href="index.html"><img src="assets/logo.png" alt="fortwoone"></a>
+                <h1>Fortwoone's Website</h1>
+            </div>
+            <nav>
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html">Home</a></li>
+                    <li class="nav_item unroll">
+                        <a href="past_projects.html">Past projects</a>
+                        <ul class="options">
+                            <li><a href="tcc.html">The Crazy Computer</a></li>
+                            <li><a href="atgp.html">A Totally Generic Platformer</a></li>
+                            <li><a href="pyzora.html">PyZora</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <div class="bordered">
             <img src="assets/ATGP.png" alt="A Totally Generic Platformer">
