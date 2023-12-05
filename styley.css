@@ -30,6 +30,7 @@
 }
 
 img{
+    image-rendering:crisp-edges;
     image-rendering:-moz-crisp-edges;          /* Firefox        */
     image-rendering:-o-crisp-edges;            /* Opera          */
     -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
@@ -42,7 +43,7 @@ body{
     background-repeat:no-repeat;
     background-attachment: fixed;
     color:white;
-    font-family: 'Junction', sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
 
 #tcc_logo{
