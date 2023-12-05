@@ -56,8 +56,49 @@ body{
     height:80px;
 }
 
+#pylogo{
+    width:100px;
+    height:125px;
+}
+
+#cpplogo{
+    width:100px;
+    height:100px;
+}
+
+#scratch_logo{
+    transform:scale(0.75);
+}
+
+#ada_logo{
+    width:50%;
+    height:50%;
+}
+
+#html_logo{
+    width:12.5%;
+    height:12.5%;
+    transform:scale(2.25);
+}
+
+#css_logo{
+    width:12.5%;
+    height:12.5%;
+    transform:scale(1.35);
+}
+
+#js_logo{
+    width:73px;
+    height:73px;
+    transform:scale(2);
+}
+
+#sql_logo{
+    width:150px;
+    height:150px;
+}
+
 header{
-    /*background-color: #2222c0;*/
     display:flex;
     justify-content:center;
     align-items:center;
