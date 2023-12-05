@@ -8,10 +8,37 @@
     url("assets/Triforce.ttf") format("truetype");
 }
 
+@font-face{
+    font-family:"Junction";
+    src:
+        url("assets/Junction-regular.otf") format("opentype");
+    font-weight:normal;
+}
+
+@font-face{
+    font-family:"Junction";
+    src:
+        url("assets/Junction-light.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Junction";
+    src:
+        url("assets/Junction-bold.otf") format("opentype");
+    font-weight: bold 900;
+}
+
+img{
+    image-rendering:-moz-crisp-edges;          /* Firefox        */
+    image-rendering:-o-crisp-edges;            /* Opera          */
+    -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
+}
+
 body{
     background-color: #147da4;
     color:white;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Junction', sans-serif;
 }
 
 #tcc_logo{
@@ -23,6 +50,67 @@ header{
     display:flex;
     justify-content:center;
     align-items:center;
+}
+
+.logo_and_name{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    border-top:2px solid silver;
+    border-left:2px solid silver;
+    border-right:2px solid silver;
+}
+
+nav{
+    width:100%;
+    top:0;
+    position:sticky;
+    border:2px solid gold;
+}
+
+nav>ul::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+nav>ul>li{
+    display:flex;
+    /*border-right:0.25px solid black;*/
+    /*border-left:0.25px solid black;*/
+    float:left;
+    width:50%;
+    position:relative;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+}
+
+.nav_list{
+    display:flex;
+    list-style-type:none;
+    margin:0;
+    align-items:center;
+    text-align:center;
+    justify-content:space-evenly;
+}
+
+.nav_item{
+    position:relative;
+    width:50%;
+}
+
+.nav-item:first-child{
+    border-right:1px solid gold;
+}
+
+.nav_item:nth-child(2){
+    border-left:2px solid gold;
+}
+
+.nav_item>a{
+    color:white;
 }
 
 h2{
@@ -41,6 +129,11 @@ a:hover{
     justify-content:center;
     align-items:center;
     text-align:center;
+}
+
+.unroll>a::after{
+    content:"▼";
+    font-size:12px;
 }
 
 .no_list{
@@ -78,4 +171,38 @@ footer{
 
 .bold_paragraph{
     font-weight:bold;
+}
+
+.options{
+    display:none;
+    position:absolute;
+    width:100%;
+    list-style-type:none;
+    box-shadow:0 1px 2px #CCC;
+    background-color: #2222c0;
+    border:1px solid silver;
+    top:100%;
+}
+
+.options>li{
+    content:"";
+    width:100%;
+    height:25px;
+    text-align:center;
+    z-index:1000;
+}
+
+.options>li::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.options>li>a{
+    color:white;
+    border-bottom:none;
+}
+
+nav>ul>li:hover .options{
+    display:block;
 }
