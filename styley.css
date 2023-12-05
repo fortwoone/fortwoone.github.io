@@ -47,7 +47,13 @@ body{
 }
 
 #tcc_logo{
-    width:50%;
+    width:298px;
+    height:79px;
+}
+
+#atgp_logo{
+    width:252px;
+    height:80px;
 }
 
 header{
