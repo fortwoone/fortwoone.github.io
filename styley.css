@@ -265,3 +265,9 @@ footer{
 nav>ul>li:hover .options{
     display:block;
 }
+
+.invisible_letters{
+    color:rgba(0, 0, 0, 0);
+    background-color:rgba(0, 0, 0, 0);
+    padding:0;
+}
