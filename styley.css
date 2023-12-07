@@ -271,3 +271,7 @@ nav>ul>li:hover .options{
     background-color:rgba(0, 0, 0, 0);
     padding:0;
 }
+
+.proj_title{
+    padding-top:25px;
+}
