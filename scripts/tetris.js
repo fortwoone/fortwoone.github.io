@@ -397,11 +397,20 @@ function cant_turn(){
     document.getElementById("timing_indicator").className = "";
 }
 
+function toggle_can_turn(){
+    can_turn_piece = !can_turn_piece;
+    document.getElementById("timing_indicator").className = can_turn_piece ? "timing_active" : "";
+}
+
 function set_event_listeners_for_current_level(){
-    clearInterval(can_turn);
-    clearInterval(cant_turn);
-    setInterval(can_turn, LEVEL_RHYTHM_DELAYS[level]*2);
-    setInterval(cant_turn, LEVEL_RHYTHM_DELAYS[level]*1.5);
+    clearInterval(toggle_can_turn);
+    can_turn_piece = false;
+    toggle_can_turn();
+    setInterval(toggle_can_turn, LEVEL_RHYTHM_DELAYS[level]*0.5);
+    // clearInterval(can_turn);
+    // clearInterval(cant_turn);
+    // setInterval(can_turn, LEVEL_RHYTHM_DELAYS[level]*2);
+    // setInterval(cant_turn, LEVEL_RHYTHM_DELAYS[level]*1.5);
 }
 
 // game loop
