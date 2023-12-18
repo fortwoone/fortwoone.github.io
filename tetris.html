@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="scripts/tetris.js"></script>
+        <link rel="stylesheet" href="styles/tetris.css">
+        <title>Web Tetris Game</title>
+    </head>
+    <body>
+        <button onclick="instructions();">Instructions</button>
+        <div class="game_div">
+            <figure>
+                <img id="tetris_logo" src="assets/390px-The_Tetris_Company_Logo.png" alt="Tetris">
+                <figcaption>
+                    This logo and the "Tetris" name are property of The Tetris Company.
+                    <br>The website author is not affiliated with The Tetris Company in any way.
+                    <br>
+                    <br><a href="index.html">Back to website</a>
+                </figcaption>
+            </figure>
+            <div class="gm_canvas">
+                <canvas width="320" height="640" id="game"></canvas>
+                <button onclick="reset();">Start</button>
+            </div>
+            <div class="game_info">
+                <div>
+                    <label for="rhythm_enabled">Rhythm mode :</label>
+                    <input type="checkbox" id="rhythm_enabled"/>
+                </div>
+                <div id="timing_indicator">NOW!</div>
+                <div class="level_counter">
+                    <p>Level :</p>
+                    <p id="level_no">1</p>
+                </div>
+                <div class="score_display">
+                    <p id="score_p">Score :</p>
+                    <p id="score_display">000000</p>
+                </div>
+                <div>
+                    <p>Lines cleared :</p>
+                    <p id="line_count">0</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

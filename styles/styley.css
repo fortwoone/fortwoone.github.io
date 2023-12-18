@@ -1,31 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;900&display=swap');
-@import "assets/Triforce.ttf";
+@import "../assets/Triforce.ttf";
 
 @font-face{
     font-family:"Triforce";
     src:
-    url("assets/Triforce.ttf") format("truetype");
+    url("../assets/Triforce.ttf") format("truetype");
 }
 
 @font-face{
     font-family:"Junction";
     src:
-        url("assets/Junction-regular.otf") format("opentype");
+        url("../assets/Junction-regular.otf") format("opentype");
     font-weight:normal;
 }
 
 @font-face{
     font-family:"Junction";
     src:
-        url("assets/Junction-light.otf") format("opentype");
+        url("../assets/Junction-light.otf") format("opentype");
     font-weight: 300;
 }
 
 @font-face {
     font-family: "Junction";
     src:
-        url("assets/Junction-bold.otf") format("opentype");
+        url("../assets/Junction-bold.otf") format("opentype");
     font-weight: bold 900;
 }
 
@@ -36,7 +36,7 @@ img{
     -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
 }
 
-body{
+html{
     /*background-color: #147da4;*/
     background:#2222c0;
     background:linear-gradient(to bottom, #2222c0 0%, #147da4 100%);
@@ -44,6 +44,12 @@ body{
     background-attachment: fixed;
     color:white;
     font-family: 'Orbitron', sans-serif;
+}
+
+body{
+    background:#00000000;
+    color:white;
+    font-family:"Orbitron", sans-serif;
 }
 
 #tcc_logo{
@@ -105,6 +111,8 @@ body{
 
 header{
     display:flex;
+    margin:0;
+    padding:0;
     justify-content:center;
     align-items:center;
 }
