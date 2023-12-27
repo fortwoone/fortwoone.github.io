@@ -385,17 +385,6 @@ function update_score(){
     document.getElementById("level_no").innerHTML = pad("", actual_level);
 }
 
-function can_turn(){
-    console.log("Can turn");
-    can_turn_piece = true;
-    document.getElementById("timing_indicator").className = "timing_active";
-}
-
-function cant_turn(){
-    console.log("Can't turn");
-    can_turn_piece = false;
-    document.getElementById("timing_indicator").className = "";
-}
 
 function toggle_can_turn(){
     can_turn_piece = !can_turn_piece;
@@ -407,10 +396,6 @@ function set_event_listeners_for_current_level(){
     can_turn_piece = false;
     toggle_can_turn();
     setInterval(toggle_can_turn, LEVEL_RHYTHM_DELAYS[level]*0.5);
-    // clearInterval(can_turn);
-    // clearInterval(cant_turn);
-    // setInterval(can_turn, LEVEL_RHYTHM_DELAYS[level]*2);
-    // setInterval(cant_turn, LEVEL_RHYTHM_DELAYS[level]*1.5);
 }
 
 // game loop
