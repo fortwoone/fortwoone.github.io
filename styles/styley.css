@@ -1,4 +1,5 @@
 @import "../assets/Triforce.ttf";
+@import "../assets/Chillax-Variable.ttf";
 
 @font-face{
     font-family:"Triforce";
@@ -26,6 +27,8 @@ html{
     background-repeat:no-repeat;
     background-attachment: fixed;
     color:white;
+    max-width: 150ch;
+    margin: auto;
     font-family: 'Chillax', sans-serif;
 }
 
@@ -33,6 +36,10 @@ body{
     background:#00000000;
     color:white;
     font-family:"Chillax", sans-serif;
+}
+
+.left_aligned{
+    text-align: left;
 }
 
 #tcc_logo{
