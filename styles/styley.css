@@ -71,6 +71,8 @@ body{
 }
 
 #css_logo{
+    margin-top:25px;
+    margin-bottom:25px;
     width:12.5%;
     height:12.5%;
     transform:scale(1.35);
