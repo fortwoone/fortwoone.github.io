@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;900&display=swap');
 @import "../assets/Triforce.ttf";
 
 @font-face{
@@ -8,25 +6,10 @@
     url("../assets/Triforce.ttf") format("truetype");
 }
 
-@font-face{
-    font-family:"Junction";
-    src:
-        url("../assets/Junction-regular.otf") format("opentype");
-    font-weight:normal;
-}
-
-@font-face{
-    font-family:"Junction";
-    src:
-        url("../assets/Junction-light.otf") format("opentype");
-    font-weight: 300;
-}
-
 @font-face {
-    font-family: "Junction";
-    src:
-        url("../assets/Junction-bold.otf") format("opentype");
-    font-weight: bold 900;
+    font-family: "Chillax";
+    src: url("../assets/Chillax-Variable.ttf") format("truetype");
+    font-weight: 300;
 }
 
 img{
@@ -43,13 +26,13 @@ html{
     background-repeat:no-repeat;
     background-attachment: fixed;
     color:white;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Chillax', sans-serif;
 }
 
 body{
     background:#00000000;
     color:white;
-    font-family:"Orbitron", sans-serif;
+    font-family:"Chillax", sans-serif;
 }
 
 #tcc_logo{
@@ -115,6 +98,10 @@ header{
     padding:0;
     justify-content:center;
     align-items:center;
+}
+
+p{
+    margin-top:30px;
 }
 
 .logo_and_name{
